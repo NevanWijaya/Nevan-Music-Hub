@@ -9,6 +9,7 @@ import { HeaderComponent } from './header/header.component';
 import { MusicFormComponent } from './music-form/music-form.component';
 import { DisplayComponent } from './display/display.component';
 import { PersonalRecComponent } from './personal-rec/personal-rec.component';
+import { AngularMaterialModule } from './angular-material.module';
 
 @NgModule({
   declarations: [
@@ -21,7 +22,8 @@ import { PersonalRecComponent } from './personal-rec/personal-rec.component';
   imports: [
     BrowserModule,
     AppRoutingModule,
-    HttpClientModule
+    HttpClientModule,
+    AngularMaterialModule
   ],
   providers: [],
   bootstrap: [AppComponent]

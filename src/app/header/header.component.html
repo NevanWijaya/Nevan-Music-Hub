@@ -1,6 +1,14 @@
-<header>
-    <a *ngFor="let section of pages"
-        [routerLink]="section.link"
-        routerLinkActive="activeLink"
-        [routerLinkActiveOptions]="{exact: true}">{{ section.name }}</a>
-</header>
+<mat-toolbar id="bar">
+    <ul class="headerList">
+        <li *ngFor="let section of pages" class="headerListItem">
+            <a  [routerLink]="section.path"
+                class="headerLink"
+                mat-button
+                color="primary"
+                routerLinkActive="activeLink"
+                [routerLinkActiveOptions]="{exact: true}">
+                {{section.name}}
+            </a>
+        </li>
+    </ul>
+</mat-toolbar>
